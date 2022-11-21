@@ -15,6 +15,8 @@ Añadir 15 gr de orégano seco repartido por toda la base
 Introducir al horno 20 min a 180 º con calor por arriba y por abajo
 Sacamos del horno.*/
 
+const { SassFunction } = require("sass");
+
 let bowl = "bowl";
 let GrSalt = 10;
 let flour = "harina"; 
@@ -26,10 +28,22 @@ let yeast = "yeast"
 
 let grams
 
-function MakePizza() {
+/*function MakePizza() {
     console.log("Colocamos un", bowl);
     console.log("añadir",GrFlour, )
+}*/
 
+let slideIndex = 0;
+showSlides();
 
-    
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
