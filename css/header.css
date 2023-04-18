@@ -1,0 +1,27 @@
+  
+
+.container-logo  {
+    
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    background-color: black;
+    color: antiquewhite;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 3%;
+    font-size: 100%;
+      
+}
+
+.responsive  {
+    max-width: 40%;
+    
+}
+
+body  {
+    background-color: black;
+    text-decoration: none;
+}
+li  {
+    list-style: none;
+}
